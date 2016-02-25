@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!--Name  : Vatsal Kesarwani-->
+<!--UTA Id: 1000869718-->
+<html>
+	<head>
+		<title>A Pong Game in JavaScript</title>
+		<meta charset="utf-8"/>
+	</head>
+	
+	<body onload="initialize();" onmousemove="movePaddle(event);">
+		<h1 style="text-align: center;">CSE 5335 Web Data Management and XML</h1>
+		<h2 style="text-align: center;">Project 1</h2>
+		<h3 style="text-align: center;">A JavaScript Game</h3>
+		<label><input type="radio" name="setSpeed" value="0" checked="checked" onclick="setSpeed(0);">Slow</label>
+		<label><input type="radio" name="setSpeed" value="1" onclick="setSpeed(1);">Medium</label>
+		<label><input type="radio" name="setSpeed" value="2" onclick="setSpeed(2);">Fast</label>
+		<button onclick="resetCounter()">Reset</button>
+		<label>Score: <span id="scoreBoard">0</span></label><br>
+		<div id="gameCourt" style="border: solid black; cursor: none; width: 1100px; height: 600px;" onclick="startGame(event);">
+			<img id="gameBall" src="http://lambda.uta.edu/cse5335/spring14/ball.gif" style="margin: 0px; padding: 0px; position: relative; top: -50px;"/>
+			<img id="gamePaddle" src="http://lambda.uta.edu/cse5335/spring14/paddle.gif" style="margin: 0px; padding: 0px; position: relative; left: 1000px;"/>
+		</div>
+		<script src="pong.js"></script> 
+	</body>
+</html>
