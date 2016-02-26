@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+  Name  : Vatsal Kesarwani
+  UTA Id: 1000869718
+  URL   : http://omega.uta.edu/~vxk9718/cse5335/project2/movies.html
+-->
+<html lang="en">
+	<head>
+		<title>Display Movie Information</title>
+		<meta charset="utf-8"/>
+		<script type="text/javascript" src="movies.js"></script>
+	</head>
+	<body onload="initialize();">
+		<h1 style="text-align: center;">CSE 5335 Web Data Management and XML</h1>
+		<h2 style="text-align: center;">Project 2</h2>
+		<h2 style="text-align: center;">A Movie Web Application</h2>
+		<form style="text-align: center;">
+			<label>Movie title: <input type="text" id="form-input"/></label>
+			<input type="button" onclick="sendRequest();" value="Display Info"/>
+		</form>
+		<div id="output">
+			<div id="resultWindow" style="float: left; width: 38%;">
+				<h3 id="resultHeading" style="display: none;">Search Results</h3>
+				<ul id="resultUList">&nbsp;</ul>
+			</div>
+			<div id="movieWindow" style="float: right; width: 60%;">
+				<h3 id="movieHeading" style="display: none;">Movie Details</h3>
+				<div style="float: left;">
+					<img id="movieImage" alt="Poster Not available" style="display: none;"></img>
+				</div>
+				<div id="movieDetails" style="float: right; width: 75%;"></div>
+				<div style="clear:both; font-size:1px;"></div>
+			</div>
+			<div style="clear:both; font-size:1px;"></div>
+		</div>
+	</body>
+</html>
