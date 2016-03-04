@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--
+	Name  : Vatsal Kesarwani
+	UTA Id: 1000869718 
+	URL   : http://omega.uta.edu/~vxk9718/cse5335/project3/yelp.html
+-->
+<html lang="en">
+	<head>
+		<title>Web Mashup: Display Best Restaurants on a Map</title>
+		<meta charset="utf-8"/>
+		<script type="text/javascript" src="yelp.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	</head>
+	<body onload="initialize();">
+		<h1 style="text-align: center;">CSE 5335 Web Data Management and XML</h1>
+		<h2 style="text-align: center;">Project 3</h2>
+		<h2 style="text-align: center;">Web Mashup: Display Best Restaurants on a Map</h2>
+		<form style="text-align: center;">
+			<label>Search Terms: <input type="text" id="searchText"/></label>
+			<input type="button" onclick="sendRequest();" value="Find"/>
+		</form>
+		<div id="output">
+			<div id="mapCanvas" style="float: left; width: 600px; height: 500px;"></div>
+			<div id="searchResult" style="float: right; width: 700px">&nbsp;</div>
+			<div style="clear:both; font-size:1px;"></div>
+		</div>
+	</body>
+</html>
