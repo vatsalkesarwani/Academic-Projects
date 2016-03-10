@@ -11,3 +11,6 @@ MS in CS at University of Texas, Arlington
 **Programming Assignment 3:** Web Mashup - Display Best Restaurants on a Map
 
 **Programming Assignment 4:** PHP Scripting
+
+**Programming Assignment 5:** Implementation of a Message Board using PHP and a Database
+
