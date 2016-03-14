@@ -14,3 +14,5 @@ MS in CS at University of Texas, Arlington
 
 **Programming Assignment 5:** Implementation of a Message Board using PHP and a Database
 
+**Programming Assignment 6:** Using XPath, DOM and SAX
+
