@@ -16,3 +16,5 @@ MS in CS at University of Texas, Arlington
 
 **Programming Assignment 6:** Using XPath, DOM and SAX
 
+**Programming Assignment 7:** Using XQuery
+
