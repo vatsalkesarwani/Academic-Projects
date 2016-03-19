@@ -18,3 +18,5 @@ MS in CS at University of Texas, Arlington
 
 **Programming Assignment 7:** Using XQuery
 
+**Programming Assignment 8:** Storing XML in a Relational Database
+
