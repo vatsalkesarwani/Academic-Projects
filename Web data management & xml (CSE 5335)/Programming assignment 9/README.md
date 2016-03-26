@@ -39,8 +39,8 @@ ls /home/u/ux/uxg4406/public_html/project9/hadoop-1.2.1
 
 You will use the [orders.tbl](http://omega.uta.edu/~uxg4406/project9/orders.tbl) with the following schema:
 
---- | --- | --- | --- | --- | --- | --- | --- | ---
 ORDERKEY | CUSTKEY | ORDERSTATUS | TOTALPRICE | ORDERDATE | ORDER-PRIORITY | CLERK | SHIP-PRIORITY | COMMENT
+--- | --- | --- | --- | --- | --- | --- | --- | ---
 
 You need to implement the following SQL query in the Map-Reduce Framework.
 
