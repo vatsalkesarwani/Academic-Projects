@@ -15,7 +15,7 @@ Note that, if you use a Search Engine to find similar programs on the web, we wi
 
 **Platform**
 
-You will develop this project on Omega or your own PC/laptop. If you want use your own PC (Mac or Linux only), you need to install [Apache Hadoop](http://hadoop.apache.org/docs/r1.2.1/single_node_setup.html). Note: Hadoop does not work on Windows. To use Hadoop on Omega, download Apache Hadoop 1.2.1. and do the following to extract:
+You will develop this project on Omega or your own PC/laptop. If you want use your own PC (Mac or Linux only), you need to install [Apache Hadoop](http://hadoop.apache.org/docs/r1.2.1/single_node_setup.html). Note: Hadoop does not work on Windows. To use Hadoop on Omega, download [Apache Hadoop 1.2.1](http://hadoop.apache.org/releases.html#Download). and do the following to extract:
 
 tar -xvf hadoop-1.2.1.tar.gz 
 
