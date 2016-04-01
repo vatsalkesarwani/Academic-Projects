@@ -1,5 +1,3 @@
-package project6;
-
 import java.util.Hashtable;
 
 import javax.xml.parsers.SAXParserFactory;
@@ -53,11 +51,6 @@ class QueryHandler extends DefaultHandler {
     }
 
     public void startElement ( String uri, String name, String tag, Attributes atts ) throws SAXException {
-    	//System.out.println(uri);
-    	//System.out.println(name);
-    	//System.out.println(tag);
-    	//System.out.println(atts);
-  
     	if (tag.equals("volume"))
 		    volumeBool = true;
     	else if (tag.equals("number"))
@@ -75,11 +68,6 @@ class QueryHandler extends DefaultHandler {
     }
 
     public void characters ( char text[], int start, int length ) {
-    	//System.out.println(new String(text,start,length));
-    	//System.out.println(text);
-    	//System.out.println(start);
-    	//System.out.println(length);
-    	
     	if (volumeBool == true)
 		    volumeTag = new String(text,start,length);
     	else if (numberBool == true)
@@ -97,32 +85,19 @@ class QueryHandler extends DefaultHandler {
     	
     	if(volumeTag.equals("13") && numberTag.equals("4") && authorTag.equals("David Maier")) {
     		solution1 = solution1 + titleTag + "\n";
-    		//System.out.println("Solution 1");
-    		//System.out.println(titleTag);
     	}
     	if((titleTag.contains("database") || titleTag.contains("Database")) && (authorBool == true)) {
     		solution2 = solution2 + "Author: " + authorTag + "\n";
-    		//System.out.println("Solution 2");
-    		//System.out.println("Author: " + authorTag);
     	}
     	if((titleTag.equals("Research in Knowledge Base Management Systems.")) && (initBool == true)) {
     		solution3 = solution3 + "Volume: " + volumeTag + " Number: " + numberTag + " InitPage: " + new String(text,start,length);
-    		//System.out.println("Solution 3");
-    		//System.out.println("Volume: " + volumeTag);
-    		//System.out.println("Number: " + numberTag);
-    		//System.out.println("InitPage: " + new String(text,start,length));
     	}
     	if((titleTag.equals("Research in Knowledge Base Management Systems.")) && (endBool == true)) {
     		solution3 = solution3 + " EndPage: " + new String(text,start,length) + "\n";
-    		//System.out.println("EndPage: " + new String(text,start,length));
     	}
     }
     
     public void endElement ( String uri, String name, String tag ) {
-    	//System.out.println(uri);
-    	//System.out.println(tag);
-    	//System.out.println(name);
-   
     	if (tag.equals("volume"))
 		    volumeBool = false;
     	else if (tag.equals("number"))
