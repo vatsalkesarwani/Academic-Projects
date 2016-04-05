@@ -1,5 +1,3 @@
-package project8;
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -10,7 +8,6 @@ public class XmlWriter {
 
 	public static void main(String args[]) throws ClassNotFoundException {
 		Class.forName("org.sqlite.JDBC");
-
 		Connection sqlConnection = null;
 		try {
 			sqlConnection = DriverManager.getConnection("jdbc:sqlite:Vatsal");
@@ -30,7 +27,6 @@ public class XmlWriter {
 			while(sqlQuery1.next()) {
 				String lastName = sqlQuery1.getString("lastname");
 				String firstName = sqlQuery1.getString("firstname");
-
 				int phoneNo = sqlQuery1.getInt("phone");
 				String emailId = sqlQuery1.getString("email");
 				String cityName = sqlQuery1.getString("City");
@@ -57,13 +53,11 @@ public class XmlWriter {
 				System.out.println("</gradstudent>");
 			}
 			while(sqlQuery2.next()) {
-				//int staff_id =query2.getInt("staff_ID"); 
 				String lastName = sqlQuery2.getString("lastname");
 				String firstName = sqlQuery2.getString("firstname");
 				int phoneNo = sqlQuery2.getInt("phone");
 				String emailId = sqlQuery2.getString("email");
 				int office = sqlQuery2.getInt("office");
-				//System.out.println(staff_id);
 				System.out.println("<staff>");
 				System.out.println("<name>");
 				System.out.println("\t<lastname>"+lastName+"</lastname>");
@@ -75,13 +69,11 @@ public class XmlWriter {
 				System.out.println("</staff>");
 			}
 			while(sqlQuery3.next()) {
-				//int staff_id =query2.getInt("staff_ID"); 
 				String lastName = sqlQuery3.getString("lastname");
 				String firstName = sqlQuery3.getString("firstname");
 				int phoneNo = sqlQuery3.getInt("phone");
 				String emailId = sqlQuery3.getString("email");
 				int office = sqlQuery3.getInt("office");
-				//System.out.println(staff_id);
 				System.out.println("<faculty>");
 				System.out.println("<name>");
 				System.out.println("\t<lastname>"+lastName+"</lastname>");
