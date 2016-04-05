@@ -1,5 +1,3 @@
-package project8;
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -74,7 +72,6 @@ class QueryHandler extends DefaultHandler {
     
     private void insertIntoXml() throws ClassNotFoundException {
     	Class.forName("org.sqlite.JDBC");
-
     	Connection sqlConnection = null;
     	try
     	{
@@ -82,29 +79,23 @@ class QueryHandler extends DefaultHandler {
     		Statement sqlStatement = sqlConnection.createStatement();
     		sqlStatement.executeUpdate("insert into department values(null,'computer science')");
     		for (grad temp : gradList) {
-    			String sqlQuery1 = "insert into grad values(null,'" + temp.getFirstname() + "','" + temp.getLastname() + "','" + temp.getPhone() + "','"
-    					+temp.getEmail() + "','"
+    			String sqlQuery1 = "insert into grad values(null,'" + temp.getFirstname() + "','" + temp.getLastname() + "','" + temp.getPhone() + "','" + temp.getEmail() + "','"
     					//+temp.getCity() + "','" + temp.getState() + "','" + temp.getZip() + "','" + temp.getOffice() + "','" + temp.getUrl() + "','"
-    					+temp.getGpa() + "')";
+    					+ temp.getGpa() + "')";
     			sqlStatement.addBatch(sqlQuery1);	                   
     		}
     		for (undergrad temp : undergradList) {
-    			String sqlQuery2 = "insert into undergrad values (null,'"+temp.getLastname() + "','" + temp.getFirstname() + "','" + temp.getPhone() + "','" 
-    					+ temp.getEmail() + "','"
+    			String sqlQuery2 = "insert into undergrad values (null,'" + temp.getLastname() + "','" + temp.getFirstname() + "','" + temp.getPhone() + "','" + temp.getEmail() + "','"
     					//+ temp.getCity() + "','" + temp.getState() + "','" + temp.getZip() + "','"
     					+ temp.getGpa() + "')";
     			sqlStatement.addBatch(sqlQuery2);	                   
     		}
     		for (faculty temp : facultyList) {
-    			String sqlQuery3="insert into faculty values (null,'" + temp.getFirstname() + "','" + temp.getLastname() + "','" + temp.getPhone() + "','"
-    					+ temp.getEmail() + "','" + temp.getOffice() + "')";
+    			String sqlQuery3="insert into faculty values (null,'" + temp.getFirstname() + "','" + temp.getLastname() + "','" + temp.getPhone() + "','" + temp.getEmail() + "','" + temp.getOffice() + "')";
     			sqlStatement.addBatch(sqlQuery3);
     		}
-
-    		//System.out.println(staffList.size());
     		for (staff temp : staffList) {
-    			String sqlQuery4="insert into staff values (null,'"+temp.getLastname()+"','" + temp.getFirstname() + "','" + temp.getPhone() + "','" 
-    					+ temp.getEmail() + "','" + temp.getOffice() + "')";
+    			String sqlQuery4="insert into staff values (null,'" + temp.getLastname() + "','" + temp.getFirstname() + "','" + temp.getPhone() + "','" + temp.getEmail() + "','" + temp.getOffice() + "')";
     			sqlStatement.addBatch(sqlQuery4);
     		}
     		sqlStatement.executeBatch();
@@ -378,11 +369,6 @@ class QueryHandler extends DefaultHandler {
     }
 
     public void startElement ( String uri, String name, String tag, Attributes atts ) throws SAXException {
-    	//System.out.println(uri);
-    	//System.out.println(name);
-    	//System.out.println(tag);
-    	//System.out.println(atts);
-  
     	if (tag.equals("gradstudent")) {
     		Grad = new grad();
     		gradBool = true;
@@ -410,10 +396,6 @@ class QueryHandler extends DefaultHandler {
     }
 
     public void characters ( char text[], int start, int length ) {
-    	//System.out.println(new String(text,start,length));
-    	//System.out.println(text);
-    	//System.out.println(start);
-    	//System.out.println(length);
     	if (gradBool == true) {
     		gradTag = new String(text,start,length);
     		if(lastnameBool == true) {
@@ -429,10 +411,6 @@ class QueryHandler extends DefaultHandler {
     }
     
     public void endElement ( String uri, String name, String tag ) {
-    	//System.out.println(uri);
-    	//System.out.println(tag);
-    	//System.out.println(name);
-   
     	if (tag.equals("gradstudent")) {
     		gradList.add(Grad);
     		gradBool = false;
@@ -458,5 +436,4 @@ class QueryHandler extends DefaultHandler {
     public void endDocument() throws SAXException {
     	
     }
-
 }
