@@ -3,6 +3,11 @@
 #### Programming Assignment 8 : Storing XML in a Relational Database
 MS in CS at University of Texas, Arlington
 
+**Usage Example of SQLite JDBC jar:**
+
+* javac Sample.java
+* java -classpath ".:sqlite-jdbc-(VERSION).jar" Sample   # in Mac or Linux
+
 **Programming Assignment's Requirements:** http://lambda.uta.edu/cse5335/spring14/project8.html Also, alternatively given below.
 
 **Description**
