@@ -3,6 +3,13 @@
 #### Programming Assignment 9 : Data Analysis using Map-Reduce
 MS in CS at University of Texas, Arlington
 
+**Usage Instructions:**
+
+* Download Hadoop and put all these files in Hadoop's root folder
+* Use the following to run the program: bin/hadoop jar MapReduce.jar MapReduce orders.tbl output
+
+Note: output is the folder with result of the program
+
 **Programming Assignment's Requirements:** http://lambda.uta.edu/cse5335/spring14/project9.html Also, alternatively given below.
 
 **Description**
