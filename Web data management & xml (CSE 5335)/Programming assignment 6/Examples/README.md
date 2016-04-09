@@ -12,3 +12,9 @@ These are the example codes mentioned in the requirements (downloaded from same 
 * DEPARTMENT.DTD : [The DTD document used in Java](http://lambda.uta.edu/cse5335/spring14/examples/department.dtd) (the DTD of the document). 
 
 **Note:** these examples express a simple query in XPath, DOM, and SAX using Java.
+
+**Usage Instructions:**
+
+* Download and put all these files in a folder
+* Use the following command to compile the java programs: javac Sample.java
+* Use the following command to run the java programs: java Sample
