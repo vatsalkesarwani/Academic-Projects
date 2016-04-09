@@ -3,6 +3,12 @@
 #### Programming Assignment 6 : Using XPath, DOM and SAX
 MS in CS at University of Texas, Arlington
 
+**Usage Instructions:**
+
+* Download and put all these files in a folder
+* Use the following command to compile the java programs: javac Sample.java
+* Use the following command to run the java programs: java Sample
+
 **Programming Assignment's Requirements:** http://lambda.uta.edu/cse5335/spring14/project6.html Also, alternatively given below.
 
 **Description**
