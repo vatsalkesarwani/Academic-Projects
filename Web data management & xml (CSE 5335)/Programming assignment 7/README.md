@@ -3,6 +3,11 @@
 #### Programming Assignment 7 : Using XQuery
 MS in CS at University of Texas, Arlington
 
+**Usage Instructions:**
+
+* Download Zorba and put all these files in Zorba's root folder
+* Use the following command to run the program: zorba queries.xq
+
 **Programming Assignment's Requirements:** http://lambda.uta.edu/cse5335/spring14/project7.html Also, alternatively given below.
 
 **Description**
