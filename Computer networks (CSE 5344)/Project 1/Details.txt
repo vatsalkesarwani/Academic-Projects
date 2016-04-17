@@ -1,0 +1,28 @@
+Details:
+Name      : Vatsal Kesarwani
+UTA ID    : 1000869718
+Project 1 : Multithreaded Web Proxy Server
+Course    : CSE 5344 Computer Networks Fall’13
+Date      : November 3,2013
+
+Operating System Compatibility: MAC OS X Mavericks, Windows XP, Windows 7, Windows 8
+
+Hardware Requirements:
+	- Core2Duo
+	- 512MB RAM DDR3
+	- 1GB HDD
+
+Development Environment:
+Languages  	     : Python 
+Text Editor      : TextWrangler
+Command Prompt   : Command Terminal
+Browser          : Safari Browser
+Operating System : MAC OS X Mavericks
+
+Tested on Websites: www.microsoft.com, www.tutorialspoint.com, www.centennialcourtuta.com, www.snapdeal.com
+
+References:
+1. http://www.w3.org/Protocols/rfc2616/rfc2616.html: HTTP/1.1 specification
+2. http://docs.python.org/2/howto/sockets.html
+3. “Computer Networking: A Top-Down Approach,” 6th edition, chapter 2, section 2.2, 2.7: HTTP message format, Web caching, and Socket programming by J.Kurose and K.Ross
+4. http://www.stackoverflow.com
