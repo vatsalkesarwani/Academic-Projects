@@ -6,3 +6,4 @@ MS in CS at University of Texas, Arlington
 
 **Project 1:** Multithreaded Web Proxy Server
 
+**Project 2:** Network Trace Analysis
