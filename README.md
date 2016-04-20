@@ -7,3 +7,5 @@ List of Academic Courses
 
 2. Computer Networks (CSE 5344)
 
+3. Data Mining (CSE 5334)
+
