@@ -7,3 +7,5 @@ MS in CS at University of Texas, Arlington
 
 **Project's Data:** Full data set is available at this [kaggle](https://www.kaggle.com/c/facebook-recruiting-iii-keyword-extraction/data) link.
 
+It contains training data with file name "Train" and test data with file name "Test".
+
